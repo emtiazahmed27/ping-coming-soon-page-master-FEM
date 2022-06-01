@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Poppins:wght@400;500;600;700&family=Space+Mono&display=swap");
+
+/* variables */
+:root {
+  --pri-blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray-clr: hsl(0, 0%, 59%);
+  --Dark-Blue: hsl(209, 33%, 12%);
+  --sec-blue: hsl(223, 67%, 56%);
+  --shadow-blue: #b6c8f5;
+}
+/* variables */
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* widths */
+.w-35 {
+  width: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+/* widths */
+
+/* spacing */
+.spacing-t-1 {
+  margin-top: 1rem;
+}
+
+.spacing-t-3 {
+  margin-top: 3rem;
+}
+
+.spacing-l-r-1 {
+  padding-left: 0rem 3rem;
+}
+
+.spacing-a-1 {
+  padding: 1rem;
+}
+/* spacing */
+
+/* main-designs */
+body {
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+h1 {
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--Gray-clr);
+}
+
+span {
+  color: var(--Dark-Blue);
+}
+
+p {
+  color: var(--Dark-Blue);
+}
+
+main {
+  text-align: center;
+  margin-top: 8%;
+}
+
+.container {
+  width: 30%;
+  margin-inline: auto;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.input-section {
+  width: 65%;
+}
+
+.mail {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 2px solid var(--Pale-Blue);
+  border-radius: 2rem;
+  outline: none;
+}
+
+.btn {
+  width: 30%;
+  margin-left: 1rem;
+  padding: 0.7rem 0rem;
+  border: 2px;
+  border-radius: 2rem;
+  outline: none;
+  background-color: var(--pri-blue);
+  color: white;
+  box-shadow: 20px 20px 20px var(--shadow-blue);
+  transition: background-color, box-shadow 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--sec-blue);
+  box-shadow: 7px 7px 12px 7px var(--shadow-blue);
+}
+
+.ftr-txt {
+  font-size: 12px;
+  color: darkgray;
+}
+
+.footer {
+  display: flex;
+  width: 45%;
+  margin-inline: auto;
+}
+
+.fw-icon {
+  padding: 10px;
+  color: var(--pri-blue);
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  transition: background-color, color 0.4s ease-in-out;
+}
+
+.fw-icon:hover {
+  cursor: pointer;
+  color: white;
+  background-color: var(--pri-blue);
+}
+/* main-designs */
+
+/* Resposiveness-For-Mobile */
+@media only screen and (max-width: 376px) {
+  .container {
+    width: 100%;
+    padding: 2rem;
+  }
+  h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--Gray-clr);
+    font-size: 25px;
+  }
+  p {
+    font-size: 15px;
+    color: var(--Dark-Blue);
+  }
+  .wrapper {
+    display: block;
+    width: 95%;
+    margin: auto;
+  }
+
+  .input-section {
+    width: 100%;
+  }
+  .btn {
+    margin-left: 0;
+    width: 100%;
+  }
+}
