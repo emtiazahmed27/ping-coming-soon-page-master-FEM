@@ -81,6 +81,16 @@ main {
 
 .input-section {
   width: 65%;
+  position: relative;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  display: none;
+  position: absolute;
+  bottom: -15px;
+  left: 36px;
 }
 
 .mail {
@@ -92,7 +102,7 @@ main {
 }
 
 .btn {
-  width: 30%;
+  width: 35%;
   margin-left: 1rem;
   padding: 0.7rem 0rem;
   border: 2px;
